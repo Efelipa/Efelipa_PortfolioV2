@@ -1,5 +1,5 @@
-import './App.css';
 import 'bulma/css/bulma.min.css';
+import './style.css'
 import { NavBar } from './components/Navbar';
 
 function App() {

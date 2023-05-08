@@ -1,0 +1,11 @@
+/* Navbar */
+.navbar-brand .none-effect:hover {
+    color: black;
+}
+.navbar-start .navbar-item:hover {
+    color: rgb(0,200,178);
+}
+.navbar-start .active {
+    color: black;
+    font-weight: bold;
+}

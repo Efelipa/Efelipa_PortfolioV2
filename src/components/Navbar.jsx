@@ -1,8 +1,9 @@
 import { useState, useEffect, } from 'react';
-import { Navbar, Container,  } from 'react-bulma-components';
-import logo from '../logo.png';
+import { Navbar, Container  } from 'react-bulma-components';
+import logo from '../logo.svg';
 
 export const NavBar = () => {
+    const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -17,37 +18,35 @@ export const NavBar = () => {
       window.addEventListener('scroll', onScroll)
       return() => window.removeEventListener('scroll', onScroll) 
     }, [])
-    
+
+    const updatingActiveLink = (value) => {
+        setActiveLink(value);
+    }
+
     return (
         <>
-            <Navbar className={scrolled ? 'is-fixed-top' : ''} role='navigation' aria-label='main navigation'>
-                <Container className='p-3'>
-                    <div className="navbar-brand">
-                        <img src={logo} alt='brandLogo' className='image is-48x48'/>
-                        <a className='navbar-item is-size-4' href='index.html'>
+            <Navbar className={scrolled ? 'is-fixed-top' : ''} role='navigation' aria-label='main navigation' transparent={true}>
+                <Container className='p-2'>
+                    <Navbar.Brand>
+                        <Navbar.Item className='has-text-weight-bold none-effect' href='index.html'>
+                            <img src={logo} alt="brandLogo" className='image is-48x48'/>
                             Erick Felipa
-                        </a>
-                    </div>
+                        </Navbar.Item>
+                        <Navbar.Burger role='button' arial-label='menu' aria-expanded='false' data-target='navLinks'>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </Navbar.Burger>
+                    </Navbar.Brand>
+                    <Navbar.Menu id='navLinks'>
+                        <div className="navbar-start">
+                            <Navbar.Item className={activeLink==='home'? 'active' : ''} onClick={() => {updatingActiveLink('home')}}>Home</Navbar.Item>
+                            <Navbar.Item className={activeLink==='skills'? 'active' : ''} onClick={() => {updatingActiveLink('skills')}}>Skills</Navbar.Item>
+                            <Navbar.Item className={activeLink==='projects'? 'active' : ''} onClick={() => {updatingActiveLink('projects')}}>Projects</Navbar.Item>
+                        </div>
+                    </Navbar.Menu>
                 </Container>
             </Navbar>
-            {/* <nav className={scrolled ? 'has-background-secondary' : ''} role="navigation" aria-label="main navigation">
-                <div className="container">
-                    <div className="navbar-brand">
-                        <span id='brandLogo'></span>
-                        <a className='navbar-item' href='https://bulma.io'>
-                            Erick Felipa
-                        </a>
-                    </div>
-                    <div id="navbarBasicExample" className='navbar-menu'>
-                        <div className="navbar-start">
-                            <div className="navbar-item">
-                                Home
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav> */}
-            
         </>
     )
 }
