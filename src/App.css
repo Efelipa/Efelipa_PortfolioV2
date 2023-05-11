@@ -1,0 +1,32 @@
+/* Global */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+/* Navbar */
+.navbar {
+    transition: background-color 0.32s ease-in-out;
+}
+.transparent {
+    background-color: rgba(255, 255, 255, 0);
+}
+.navbar-brand .none-effect:hover {
+    color: black;
+}
+.navbar-start .navbar-item:hover {
+    color: rgb(0,200,178);
+}
+.navbar-start .active {
+    color: black;
+    font-weight: bold;
+}
+.navbar-end .navbar-item:hover {
+    color: rgb(0,200,178);
+}
+.navbar-end .active {
+    color: black;
+    font-weight: bold;
+}
+.is-fixed-top {
+    -webkit-transition: all 0.1s ease-out;
+}
