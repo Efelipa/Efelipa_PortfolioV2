@@ -13,20 +13,17 @@ html {
 .navbar-brand .none-effect:hover {
     color: black;
 }
-.navbar-start .navbar-item:hover {
+.navbar-start .navbar-item:hover, .navbar-end .navbar-item:hover {
     color: rgb(0,200,178);
 }
-.navbar-start .active {
-    color: black;
-    font-weight: bold;
-}
-.navbar-end .navbar-item:hover {
-    color: rgb(0,200,178);
-}
-.navbar-end .active {
+.navbar-start .active, .navbar-end .active {
     color: black;
     font-weight: bold;
 }
 .is-fixed-top {
     -webkit-transition: all 0.1s ease-out;
 }
+.navbar-menu .navbar-end .icons-movement:hover {
+    transform: translateY(-6px);
+}
+/*  */
