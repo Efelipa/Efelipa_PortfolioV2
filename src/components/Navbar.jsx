@@ -1,6 +1,6 @@
 import { useState, useEffect, } from 'react';
 import { Navbar, Container  } from 'react-bulma-components';
-import logo from '../logo.svg';
+import logo from '../components/assets/img/logo.svg';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 
@@ -11,7 +11,7 @@ export const NavBar = () => {
 
     useEffect(() => {
       const onScroll = () => {
-        if (window.scrollY > 75) {
+        if (window.scrollY > 50) {
             setScrolled(true);
         } else {
             setScrolled(false);
