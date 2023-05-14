@@ -10,12 +10,13 @@ export const NavBar = () => {
     const [active, setActive] = useState(false);
 
     useEffect(() => {
-      const onScroll = () => {
-        if (window.scrollY > 50) {
-            setScrolled(true);
-        } else {
-            setScrolled(false);
-        }
+        // Define a onScroll function for apply a fixed top style
+        const onScroll = () => {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
       }
       window.addEventListener('scroll', onScroll)
       return() => window.removeEventListener('scroll', onScroll) 
@@ -26,6 +27,7 @@ export const NavBar = () => {
     }
 
     return (
+        // Navbar section
         <>
             <Navbar className={scrolled ? 'is-fixed-top scrolled' : 'transparent'} role='navigation' aria-label='main navigation'>
                 <Container className='p-2'>

@@ -1,20 +1,28 @@
-import { useState, useEffect } from 'react';
-import { Container, Columns, Notification } from 'react-bulma-components';
+import { Container, Columns } from 'react-bulma-components';
 import portfolioAvatar from '../components/assets/img/portfolioAvatar.svg';
+import Typewriter from 'typewriter-effect';
+
 
 export const Content = () => {
-    const messages = []
     return (
+        // Main section
         <section className={'hero is-fullheight'} id='main'>
             <Container>
                 <div className={'hero-body'}>
                     <Columns className='has-text-centered reverse-columns box'>
                         <div className="column is-12-mobile is-12-tablet is-6-desktop my-auto position-button">
-                            <h1 className="title is-1 mb-6">
-                                Hi! My name is Erick Felipa
+                            <h1 className="title is-1">
+                            Hi, my name is Erick.
                             </h1>
+                            <h2 className='title mb-6'>
+                                {/* Typewriter Effect */}
+                                <Typewriter onInit={(typewriter)=> {typewriter.typeString("Frontend Developer").pauseFor(800).deleteAll().typeString("Welcome!!").start();}}/>
+                            </h2>
+                            <p className={'my-3 has-text-justified'}>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, ducimus? Officia aut deleniti ab id ducimus nihil iste tempore illum accusantium, quam nisi error hic, commodi similique, ad alias numquam!
+                            </p>
                             <div className="buttons centered-button">
-                                <button className="button has-background-custom" src={'#'}>
+                                <button className="button has-background-custom" src={'#'} onClick={() => {console.log('connected')}}>
                                     Contact Me!
                                 </button>
                             </div>
