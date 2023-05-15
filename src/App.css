@@ -1,16 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@font-face {
+    font-family: "BebasNeue";
+    src: local("BebasNeue"), url("./components/assets/fonts/BebasNeue-Regular.ttf") format("truetype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: local("Ubuntu"), url("./components/assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Ubuntu-Bold";
+    src: local("Ubuntu-Bold"), url("./components/assets/fonts/Ubuntu-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
 /* Global */
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 75px;
 }
 body {
-    height: 100vh;
-    background-image: url(./components/assets/img/wall.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
 }
 /* Navbar */
 .navbar {
@@ -22,34 +32,42 @@ body {
 .navbar-brand .none-effect:hover {
     color: black;
 }
-.navbar-start .navbar-item:hover, .navbar-end .navbar-item:hover {
+.navbar-brand .navbar-item {
+    font-family: 'Ubuntu-Bold', sans-serif;
+    font-weight: bold;
+}
+.navbar-start .navbar-item:hover,
+.navbar-end .navbar-item:hover {
     color: #00c8b2;
 }
-.navbar-start .active, .navbar-end .active {
+.navbar-start .active,
+.navbar-end .active {
     color: black;
     font-weight: bold;
 }
 .is-fixed-top {
-    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
 }
 .navbar-menu .navbar-end .icons-movement:hover {
     transform: translateY(-6px);
-}
-.navbar-menu .navbar-end .icons-movement:hover {
     transition: ease-in-out .2s;
 }
 /* Content */
+.bebas {
+    font-family: 'BebasNeue', sans-serif;
+}
 .buttons {
     display: flex;
     justify-content: center;
 }
 .buttons .has-background-custom {
-    background-color: rgb(0,200,178);
+    background-color: rgb(0, 200, 178);
     border: 1px solid white;
     color: white;
-    box-shadow: -5px 7px 10px -4px rgba(0,200,178,0.42);
-    -webkit-box-shadow: -5px 7px 10px -4px rgba(0,200,178,0.42);
-    -moz-box-shadow: -5px 7px 10px -4px rgba(0,200,178,0.42);
+    box-shadow: -5px 7px 10px -4px rgba(0, 200, 178, 0.42);
+    -webkit-box-shadow: -5px 7px 10px -4px rgba(0, 200, 178, 0.42);
+    -moz-box-shadow: -5px 7px 10px -4px rgba(0, 200, 178, 0.42);
+    font-family: 'BebasNeue', sans-serif;
     font-weight: bold;
 }
 .buttons .has-background-custom:hover {
@@ -57,10 +75,11 @@ body {
     transition: ease-in-out .2s;
     background-color: rgba(3, 180, 159, 0.8);
 }
-@media(max-width: 767px) { /* <== You can change this break point as per your  needs */
+@media (max-width: 767px) {
+    /* <== You can change this break point as per your needs */
     .reverse-columns {
-      flex-direction: column-reverse;
-      display: flex;
+        flex-direction: column-reverse;
+        display: flex;
     }
 }
 #avatar {
@@ -69,7 +88,7 @@ body {
     animation-iteration-count: infinite;
 }
 @keyframes avatarAnima {
-    0%    {
+    0% {
         transform: translateY(0px);
     }
     50% {
@@ -78,4 +97,12 @@ body {
     100% {
         transform: translateY(0px);
     }
+}
+/* Skills Section */
+#skills {
+    height: 100vh;
+}
+.ubuntu-bold {
+    font-family: 'Ubuntu-Bold', sans-serif;
+    font-weight: bold;
 }

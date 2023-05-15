@@ -33,7 +33,7 @@ export const NavBar = () => {
                 <Container className='p-2'>
                     <Navbar.Brand>
                         <Navbar.Item className='has-text-weight-bold none-effect' href='index.html'>
-                            <img src={logo} alt="brandLogo" className='image is-48x48'/>
+                            <img src={logo} alt="brandLogo" className='image is-48x48' id={'brandLogo'}/>
                             Erick Felipa
                         </Navbar.Item>
                         <Navbar.Burger onClick={() => {setActive(!active)}} role='button' arial-label='menu' aria-expanded='false' data-target='navLinks' className={`burger ${active ? 'is-active' : ''}`}>
