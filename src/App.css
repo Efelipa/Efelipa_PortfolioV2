@@ -17,7 +17,12 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 75px;
+    height: 500vh;
+    background-image: url(/src/components/assets/img/wall.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
 body {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
@@ -105,4 +110,11 @@ body {
 .ubuntu-bold {
     font-family: 'Ubuntu-Bold', sans-serif;
     font-weight: bold;
+}
+.has-text-main {
+    color: #00c8b2;
+}
+/* Contact me */
+#contact-me {
+    
 }

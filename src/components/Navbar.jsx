@@ -44,9 +44,10 @@ export const NavBar = () => {
                     </Navbar.Brand>
                     <Navbar.Menu id='navLinks' className={active ? 'is-active' : ''}>
                         <div className={'navbar-start ml-2'}>
-                            <Navbar.Item className={activeLink==='home'? 'active' : ''} onClick={() => {updatingActiveLink('home')}}>Home</Navbar.Item>
-                            <Navbar.Item className={activeLink==='skills'? 'active' : ''} onClick={() => {updatingActiveLink('skills')}}>Skills</Navbar.Item>
-                            <Navbar.Item className={activeLink==='projects'? 'active' : ''} onClick={() => {updatingActiveLink('projects')}}>Projects</Navbar.Item>
+                            <Navbar.Item className={activeLink==='home'? 'active' : ''} onClick={() => {updatingActiveLink('home')}} href='#main'>Home</Navbar.Item>
+                            <Navbar.Item className={activeLink==='skills'? 'active' : ''} onClick={() => {updatingActiveLink('skills')}} href='#skills'>Skills</Navbar.Item>
+                            <Navbar.Item className={activeLink==='projects'? 'active' : ''} onClick={() => {updatingActiveLink('projects')}} href='#projects'>Projects</Navbar.Item>
+                            <Navbar.Item className={activeLink==='projects'? 'contact-me' : ''} onClick={() => {updatingActiveLink('contact-me')}} href='#contact-me'>Contact me</Navbar.Item>
                         </div>
                     </Navbar.Menu>
                     <Navbar.Menu>

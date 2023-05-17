@@ -42,7 +42,7 @@ export const Skills = () => {
         },
         {
             name: javascript,
-            title: 'Javascript (ES6+)',
+            title: 'Javascript',
             skill_level: 'Medium',
         },
         {
@@ -70,10 +70,10 @@ export const Skills = () => {
     return (
         <section id={'skills'}>
             <Container>
-                <div className={'box my-6'}>
+                <div className={'box'}>
                     <Columns>
                         <div className={'column is-12-desktop is-12-mobile is-12-tablet'}>
-                            <h1 className={'has-text-centered title my-3 is-uppercase'}>
+                            <h1 className={'has-text-centered title my-3 bebas is-2'}>
                                 My skills
                             </h1>
                         </div>
