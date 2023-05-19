@@ -69,7 +69,7 @@ export const Skills = () => {
 
     return (
         <section id={'skills'}>
-            <Container>
+            <Container className='is-fluid'>
                 <div className={'box'}>
                     <Columns>
                         <div className={'column is-12-desktop is-12-mobile is-12-tablet'}>
@@ -77,10 +77,10 @@ export const Skills = () => {
                                 My skills
                             </h1>
                         </div>
-                        <div className={'column is-8-desktop is-12-mobile is-8-tablet is-offset-2'}>
+                        <div className={'column is-10-desktop is-12-mobile is-10-tablet is-offset-1-tablet is-offset-1-desktop'}>
                             <p className={'is-2 has-text-justified'}>
                             Hello, my name is Erick and my journey in web development started in 2020. The approach I had since I was a child with new technologies and the desire to capture a part of me on the internet allowed me to learn about development and be part of it. 
-                            My learning and development skills allow me to solve problems in the most efficient way possible. I love what I do and above all not stop learning.
+                            My learning and development skills allow me to solve problems in the most efficient way possible. I love what I do and specially keep on learning.
                             </p>
                             <p className={'is-2 has-text-justified ubuntu-bold'}>
                             Here are a few technologies i've been working with: 

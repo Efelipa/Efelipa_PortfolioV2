@@ -17,10 +17,8 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 75px;
-    height: 500vh;
-    background-image: url(/src/components/assets/img/wall.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url(./components/assets/img/wall.png)no-repeat;
+    background-position: center;
 }
 
 body {
@@ -104,9 +102,9 @@ body {
     }
 }
 /* Skills Section */
-#skills {
+/* #skills {
     height: 100vh;
-}
+} */
 .ubuntu-bold {
     font-family: 'Ubuntu-Bold', sans-serif;
     font-weight: bold;
@@ -116,5 +114,15 @@ body {
 }
 /* Contact me */
 #contact-me {
-    
+    background-color:#00c8b2;
+    padding: 1rem;
+}
+#submitForm {
+    background-color: #00c8b2;
+    color: white;
+    border: none;
+}
+#submitForm:hover {
+    background-color: rgba(3, 180, 159, 0.8);
+    transition: ease .3s;
 }

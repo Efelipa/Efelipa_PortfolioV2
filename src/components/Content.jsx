@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 export const Content = () => {
     return (
         // Main section
-        <section className={'hero is-medium'} id='main'>
+        <section className={'hero is-medium my-4'} id='main'>
             <Container>
                 <div className={'hero-body'}>
                     <Columns className='has-text-centered reverse-columns box bebas'>
@@ -16,7 +16,7 @@ export const Content = () => {
                             </h1>
                             <h2 className='title mb-6'>
                                 {/* Typewriter Effect */}
-                                <Typewriter onInit={(typewriter)=> {typewriter.typeString("Frontend Developer").pauseFor(800).deleteAll().typeString("Welcome!!").start();}}/>
+                                <Typewriter onInit={(typewriter)=> {typewriter.typeString("Frontend Developer").pauseFor(800).deleteAll().typeString("Welcome to my portfolio!!").start();}}/>
                             </h2>
                             <div className="buttons centered-button">
                                 <button className="button has-background-custom" src={'#'} onClick={() => {console.log('connected')}}>
