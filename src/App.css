@@ -17,8 +17,9 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 75px;
-    background: url(./components/assets/img/wall.png)no-repeat;
-    background-position: center;
+    background: url(./components/assets/img/wall.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body {
@@ -102,9 +103,6 @@ body {
     }
 }
 /* Skills Section */
-/* #skills {
-    height: 100vh;
-} */
 .ubuntu-bold {
     font-family: 'Ubuntu-Bold', sans-serif;
     font-weight: bold;
@@ -125,4 +123,28 @@ body {
 #submitForm:hover {
     background-color: rgba(3, 180, 159, 0.8);
     transition: ease .3s;
+}
+/* Projects section */
+#panel {
+    position: relative;
+    & .mockup-img {
+        border-radius: 20px;
+    }
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.overlay:hover {
+    background-color: rgba(0, 0, 0, 30%);
+    transition: background .2s ease-in-out;
+    cursor: pointer;
 }
