@@ -4,18 +4,18 @@ import { FaUser,FaMailBulk } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
-    const { register, formState: { errors },handleSubmit } = useForm();
-    const sendMail = (e) => {
-        e.preventDefault();
-
-        emailjs.sendForm('service_35q5kt5', 'template_o1308ex', e.target, '5KOisG2KxUxjqeG6y')
-            .then(response => console.log(response))
-            .catch(error => console.log(error))
-            
-    }   
-    const onSubmit = (data) => {
-        console.log(data);
-        data.name = '';
+    const { register, formState: { errors },handleSubmit, reset } = useForm();
+ 
+    const onSubmit = (data) => {    
+        emailjs
+            .send('service_35q5kt5', 'template_o1308ex', data, '5KOisG2KxUxjqeG6y')
+            .then((response) => {
+                console.log(response.text);
+                reset();
+            }, (error) => {
+                console.log(error.text);
+            })
+        
     }
 
     return (
@@ -25,7 +25,7 @@ export const Contact = () => {
                     Contact me
                 </h1>
                 <div className={'box'}>
-                    <form action="#" onSubmit={handleSubmit(onSubmit)}>
+                    <form onSubmit={handleSubmit(onSubmit)}>
                         <Columns>
                         <div className='column is-6-desktop is-12-tablet is-12-mobile'>
                             <div className='field'>
@@ -34,7 +34,7 @@ export const Contact = () => {
                                     <div className='control has-icons-left'>
                                         <input type='text' placeholder='Type your name' className='input' {...register('name', {
                                             required: true
-                                        })} name='contact-name'/>
+                                        })}/>
                                         {errors.name?.type === 'required' && <p className='help is-danger'>This field is required</p>}
                                         <span className='icon is-small is-left'>
                                             <FaUser/>
@@ -51,7 +51,7 @@ export const Contact = () => {
                                         <input type='mail' placeholder='Type your email' className='input' {...register('mail', {
                                             pattern: /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/i,
                                             required: true,
-                                        })} name='contact-mail'/>
+                                        })}/>
                                         {errors.mail?.type === 'required' && <p className='help is-danger'>This field is required.</p>}
                                         {errors.mail?.type === 'pattern' && <p className='help is-danger'>The email address is invalid.</p> }
                                         <span className='icon is-small is-left'>
@@ -66,7 +66,7 @@ export const Contact = () => {
                                 <div className='label'>
                                     Send me a message:
                                     <div className='control'>
-                                        <textarea className='textarea' placeholder="Get in touch" {...register('message')} name='contact-message'></textarea>
+                                        <textarea className='textarea' placeholder="Get in touch" {...register('message')}></textarea>
                                     </div>
                                 </div>
                             </div>
