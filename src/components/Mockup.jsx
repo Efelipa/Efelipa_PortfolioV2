@@ -9,7 +9,7 @@ export const Mockup = ({name, url, image, tech}) => {
                         </h2>
                         {tech.map((technologies) => {
                             return (
-                                <p className='bebas'>
+                                <p key={technologies} className='bebas'>
                                     {technologies}
                                 </p>
                             )

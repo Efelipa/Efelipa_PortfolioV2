@@ -14,8 +14,7 @@ export const Contact = () => {
                 reset();
             }, (error) => {
                 console.log(error.text);
-            })
-        
+            });
     }
 
     return (
