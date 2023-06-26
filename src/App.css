@@ -13,6 +13,16 @@
     src: local("Ubuntu-Bold"), url("./components/assets/fonts/Ubuntu-Bold.ttf") format("truetype");
     font-weight: bold;
 }
+@font-face {
+    font-family: "SF-Mono-Medium";
+    src: local("SF-Mono-Medium"), url("./components/assets/fonts/SF-Mono-Medium.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SF-Mono-Light";
+    src: local("SF-Mono-Light"), url("./components/assets/fonts/SF-Mono-Light.ttf") format("truetype");
+    font-weight: medium;
+}
 /* Global */
 html {
     scroll-behavior: smooth;
@@ -26,6 +36,20 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
 }
+/* Fonts */
+.bebas {
+    font-family: 'BebasNeue', sans-serif;
+}
+.ubuntu-bold {
+    font-family: 'Ubuntu-Bold', sans-serif;
+    font-weight: bold;
+}
+.sf-mono-light {
+    font-family: 'SF-Mono-Light';
+}
+.sf-mono-medium {
+    font-family: 'SF-Mono-Medium';
+}
 /* Navbar */
 .navbar {
     transition: background-color 0.32s ease-in-out;
@@ -36,9 +60,8 @@ body {
 .navbar-brand .none-effect:hover {
     color: black;
 }
-.navbar-brand .navbar-item {
-    font-family: 'Ubuntu-Bold', sans-serif;
-    font-weight: bold;
+.navbar-start .navbar-item {
+    font-size: .9em;
 }
 .navbar-start .navbar-item:hover,
 .navbar-end .navbar-item:hover {
@@ -57,9 +80,6 @@ body {
     transition: ease-in-out .2s;
 }
 /* Content */
-.bebas {
-    font-family: 'BebasNeue', sans-serif;
-}
 .buttons {
     display: flex;
     justify-content: center;
@@ -103,10 +123,6 @@ body {
     }
 }
 /* Skills Section */
-.ubuntu-bold {
-    font-family: 'Ubuntu-Bold', sans-serif;
-    font-weight: bold;
-}
 .has-text-main {
     color: #00c8b2;
 }

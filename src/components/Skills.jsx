@@ -77,12 +77,12 @@ export const Skills = () => {
                                 My skills
                             </h1>
                         </div>
-                        <div className={'column is-10-desktop is-12-mobile is-10-tablet is-offset-1-tablet is-offset-1-desktop'}>
-                            <p className={'is-2 has-text-justified'}>
+                        <div className={'column is-10-desktop is-12-mobile is-10-tablet is-offset-1-tablet is-offset-1-desktop sf-mono-light'}>
+                            <p className={'is-2 has-text-justified has-text-weight-normal'}>
                             Hello, my name is Erick and my journey in web development started in 2020. The approach I had since I was a child with new technologies and the desire to capture a part of me on the internet allowed me to learn about development and be part of it. 
-                            My learning and development skills allow me to solve problems in the most efficient way possible. I love what I do and specially keep on learning.
+                            My learning and development skills allow me to solve problems in the most efficient possible way. I love what I do and specially keep on learning.
                             </p>
-                            <p className={'is-2 has-text-justified ubuntu-bold'}>
+                            <p className={'is-2 has-text-justified has-text-weight-bold'}>
                             Here are a few technologies i've been working with: 
                             </p>
                         </div>

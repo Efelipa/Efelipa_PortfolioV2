@@ -32,7 +32,7 @@ export const NavBar = () => {
             <Navbar className={scrolled ? 'is-fixed-top scrolled' : 'transparent'} role='navigation' aria-label='main navigation'>
                 <Container className='p-2'>
                     <Navbar.Brand>
-                        <Navbar.Item className='has-text-weight-bold none-effect' href='index.html'>
+                        <Navbar.Item className='ubuntu-bold none-effect bebas' href='index.html'>
                             <img src={logo} alt="brandLogo" className='image is-48x48' id={'brandLogo'}/>
                             Erick Felipa
                         </Navbar.Item>
@@ -43,11 +43,11 @@ export const NavBar = () => {
                         </Navbar.Burger>
                     </Navbar.Brand>
                     <Navbar.Menu id='navLinks' className={active ? 'is-active' : ''}>
-                        <div className={'navbar-start ml-2'}>
+                        <div className={'navbar-start ml-2 has-text-weight-medium sf-mono-light'}>
                             <Navbar.Item className={activeLink==='home'? 'active' : ''} onClick={() => {updatingActiveLink('home')}} href='#main'>Home</Navbar.Item>
                             <Navbar.Item className={activeLink==='skills'? 'active' : ''} onClick={() => {updatingActiveLink('skills')}} href='#skills'>Skills</Navbar.Item>
                             <Navbar.Item className={activeLink==='projects'? 'active' : ''} onClick={() => {updatingActiveLink('projects')}} href='#projects'>Projects</Navbar.Item>
-                            <Navbar.Item className={activeLink==='projects'? 'active' : ''} onClick={() => {updatingActiveLink('contact-me')}} href='#contact-me'>Contact me</Navbar.Item>
+                            <Navbar.Item className={activeLink==='contact-me'? 'active' : ''} onClick={() => {updatingActiveLink('contact-me')}} href='#contact-me'>Contact me</Navbar.Item>
                         </div>
                     </Navbar.Menu>
                     <Navbar.Menu>
