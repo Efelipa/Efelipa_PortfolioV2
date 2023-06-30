@@ -25,7 +25,7 @@ export const Content = () => {
                                     </a>
                                 </button>
                                 <button className="button has-background-custom">
-                                    <a href="" className='has-text-white'>
+                                    <a href="https://drive.google.com/file/d/1JHaQTXTw7KClgti9HfiNtGKAYlbgEEgB/view?usp=drive_link" className='has-text-white'>
                                         Get my resume
                                     </a>
                                 </button>

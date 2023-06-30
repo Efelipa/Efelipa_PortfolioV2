@@ -74,7 +74,7 @@ export const Skills = () => {
                     <Columns>
                         <div className={'column is-12-desktop is-12-mobile is-12-tablet'}>
                             <h1 className={'has-text-centered title my-3 bebas is-2'}>
-                                My skills
+                                Let me <span className='has-text-main'>introduce</span> myself
                             </h1>
                         </div>
                         <div className={'column is-10-desktop is-12-mobile is-10-tablet is-offset-1-tablet is-offset-1-desktop sf-mono-light'}>
@@ -89,6 +89,11 @@ export const Skills = () => {
                     </Columns>
                 <div className={'hero-body'}>
                     <Columns className={'has-text-centered'}>
+                        <div className={'column is-12-desktop is-12-mobile is-12-tablet'}>
+                            <h1 className={'has-text-centered title my-3 bebas is-2'}>
+                                My skills
+                            </h1>
+                        </div>
                         <div className={'column is-12-desktop is-12-mobile is-12-tablet'}>
                             <Carousel responsive={responsive} infinite={true} className={'slider is-1-mobile is-2-desktop'}>
                                 {carouselImages.map((source, index) => (
