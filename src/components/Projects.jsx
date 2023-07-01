@@ -28,7 +28,7 @@ export const Projects = () => {
             name: 'GAMRSTAND',
             id: 3,
             technologies: [
-                'html', 'bootstrap', 'javscript'
+                'html', 'bootstrap', 'javascript'
             ],
             url: 'https://thirsty-bose-145d32.netlify.app/',
             img: gamrstand,

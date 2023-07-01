@@ -16,7 +16,7 @@ export const Content = () => {
                             </h1>
                             <h2 className='mb-6 is-size-4 has-text-weight-light'>
                                 {/* Typewriter Effect */}
-                                <Typewriter onInit={(typewriter)=> {typewriter.typeString("Frontend Developer").pauseFor(700).deleteAll().typeString("Welcome to my portfolio!!").start();}}/>
+                                <Typewriter onInit={(typewriter)=> {typewriter.typeString("Welcome to my portfolio!!").pauseFor(700).deleteAll().typeString("Frontend Developer").start();}}/>
                             </h2>
                             <div className="buttons centered-button">
                                 <button className="button has-background-custom">
