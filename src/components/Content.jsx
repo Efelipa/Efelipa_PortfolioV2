@@ -1,4 +1,5 @@
 import { Container, Columns } from 'react-bulma-components';
+import { ResumeButton } from './ResumeButton';
 import portfolioAvatar from '../components/assets/img/portfolioAvatar.svg';
 import Typewriter from 'typewriter-effect';
 
@@ -24,11 +25,7 @@ export const Content = () => {
                                         Contact me
                                     </a>
                                 </button>
-                                <button className="button has-background-custom">
-                                    <a href="https://drive.google.com/file/d/1JHaQTXTw7KClgti9HfiNtGKAYlbgEEgB/view?usp=drive_link" className='has-text-white'>
-                                        Get my resume
-                                    </a>
-                                </button>
+                                <ResumeButton/>
                             </div>
                         </div>
                         <div className="column is-12-mobile is-12-tablet is-6-desktop position-top">

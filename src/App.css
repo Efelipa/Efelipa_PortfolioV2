@@ -2,26 +2,19 @@
     font-family: "BebasNeue";
     src: local("BebasNeue"), url("./components/assets/fonts/BebasNeue-Regular.ttf") format("truetype");
     font-weight: bold;
-}
-@font-face {
-    font-family: "Ubuntu";
-    src: local("Ubuntu"), url("./components/assets/fonts/Ubuntu-Regular.ttf") format("truetype");
-    font-weight: bold;
-}
-@font-face {
-    font-family: "Ubuntu-Bold";
-    src: local("Ubuntu-Bold"), url("./components/assets/fonts/Ubuntu-Bold.ttf") format("truetype");
-    font-weight: bold;
+    font-display: swap;
 }
 @font-face {
     font-family: "SF-Mono-Medium";
     src: local("SF-Mono-Medium"), url("./components/assets/fonts/SF-Mono-Medium.ttf") format("truetype");
     font-weight: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: "SF-Mono-Light";
     src: local("SF-Mono-Light"), url("./components/assets/fonts/SF-Mono-Light.ttf") format("truetype");
     font-weight: medium;
+    font-display: swap;
 }
 /* Global */
 html {

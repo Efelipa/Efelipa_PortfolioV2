@@ -1,8 +1,8 @@
 import { Container, Columns } from 'react-bulma-components';
 import { Mockup } from './Mockup';
-import scorekeeper from './assets/img/scorekeeper.png';
-import museum from './assets/img/museum.png';
-import gamrstand from './assets/img/gamrstand.png';
+import scorekeeper from './assets/img/scorekeeper.webp';
+import museum from './assets/img/museum.webp';
+import gamrstand from './assets/img/gamrstand.webp';
 
 export const Projects = () => {
     const projectsData = [

@@ -101,7 +101,7 @@ export const Skills = () => {
                                         <Card.Image src={source.name} alt={source.title}/>
                                         <Card.Content>
                                             <div className={'media-content'}>
-                                                <p className={'title is-4 is-uppercase'}>{source.title}</p>
+                                                <p className={'title is-4 is-uppercase ubuntu-bold'}>{source.title}</p>
                                                 <p className={'subtitle is-6'}>
                                                     {`My skill level: ${source.skill_level}`}
                                                 </p>
